@@ -22,13 +22,13 @@ body {
 .navbar-list {
     list-style: none;
     padding-left: 0;
-    /* margin-top: 6px; */
+    margin: 0;
 }
 
 .navbar-item {
-    margin: 0 8px;
+    padding: 1rem 8px;
     position: relative;
-    /* min-height: 26px; */
+    /* height: 100%; */
 }
 
 .navbar-item--show-qr:hover .navbar-item__qr {
@@ -50,7 +50,7 @@ body {
     height: 14px;
     position: absolute;
     background-color: #FB9086;
-    right: -10px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -62,7 +62,7 @@ body {
     height: 14px;
     position: absolute;
     background-color: #FB9086;
-    right: -10px;
+    right: -4%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -145,7 +145,7 @@ body {
 /*----------------- navbar notifications -----------------*/
 .navbar-item__noti {
     position: absolute;
-    top: 160%;
+    top: 110%;
     right: 0;
     width: 404px;
     background-color: var(--white-color);
@@ -241,9 +241,6 @@ body {
     width: 48px;
     object-fit: contain;
     align-self: flex-start;
-}
-
-.navbar-item__noti-body {
 }
 
 .navbar-item__noti-body__title {
