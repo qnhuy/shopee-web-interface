@@ -4,6 +4,10 @@
     --text-color: #333;
     --border-color: #dbdbdb;
     --primary-color: rgb(238, 77, 45);
+
+    --header-height: 120px;
+    --navbar-height: 36px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -50,6 +54,17 @@ html {
 
 @keyframes growth {
     from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes modalGrowth {
+    from {
         transform: scale(var(--growth-from));
     }
     to {
@@ -73,7 +88,7 @@ html {
     margin: auto;
     --growth-from: 0.5;
     --growth-to: 1;
-    animation: growth linear 0.2s;
+    animation: modalGrowth linear 0.2s;
 }
 
 /*--------------- button style ---------------*/
